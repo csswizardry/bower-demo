@@ -1,0 +1,11 @@
+{
+  "name": "bower-demo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/csswizardry/bower-demo",
+  "authors": [
+    "Harry Roberts <harry@csswizardry.com>"
+  ],
+  "description": "A simple demonstration of a Bower-managed UI component",
+  "main": "_components.tabs.scss",
+  "license": "MIT"
+}
