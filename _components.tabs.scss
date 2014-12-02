@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+
+/**
+ * Simple tabs component.
+ */
+
+$tabs-namespace:                "" !default;
+
+$tabs-font-size:                14px !default;
+$tabs-font-family:              sans-serif !default;
+
+$tabs-color:                    #fff !default;
+$tabs-color-background:         #33b679 !default;
+$tabs-color-background-active:  darken($tabs-color-background, 5%) !default;
+
+$tabs-padding:                  10px !default;
+$tabs-padding-small:            round(0.5 * $tabs-padding) !default;
+$tabs-padding-large:            round(2.0 * $tabs-padding) !default;
+
+.#{$tabs-namespace}tabs {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    font-size: $tabs-font-size;
+    font-family: $tabs-font-family;
+    background-color: $tabs-color-background;
+    color: $tabs-color;
+}
+
+    .#{$tabs-namespace}tabs__item {
+        display: table-cell;
+    }
+
+        .#{$tabs-namespace}tabs__link {
+            display: block;
+            padding: $tabs-padding;
+            text-align: center;
+            text-decoration: none;
+            color: $tabs-color;
+
+            &.is-active {
+                    background-color: $tabs-color-background-active;
+            }
+
+            .#{$tabs-namespace}tabs--small & {
+                padding: $tabs-padding-small;
+            }
+
+            .#{$tabs-namespace}tabs--large & {
+                padding: $tabs-padding-large;
+            }
+
+        }
