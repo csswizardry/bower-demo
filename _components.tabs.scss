@@ -12,7 +12,7 @@ $tabs-font-size:                14px !default;
 $tabs-font-family:              sans-serif !default;
 
 $tabs-color:                    #fff !default;
-$tabs-color-background:         #33b679 !default;
+$tabs-color-background:         #ff5200 !default;
 $tabs-color-background-active:  darken($tabs-color-background, 5%) !default;
 
 $tabs-padding:                  10px !default;
@@ -44,7 +44,7 @@ $tabs-padding-large:            round(2.0 * $tabs-padding) !default;
             color: $tabs-color;
 
             &.is-active {
-                    background-color: $tabs-color-background-active;
+                background-color: $tabs-color-background-active;
             }
 
             .#{$tabs-namespace}tabs--small & {
